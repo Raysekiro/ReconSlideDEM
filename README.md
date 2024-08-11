@@ -3,11 +3,11 @@
 
 ## Summary
 
-The `reconstructLandslideArea` function reconstructs a landslide area using digital elevation model (DEM) data and applies Gaussian smoothing based on specified zones. It allows users to process raw bathymetric and scar data, reconstruct the landslide region, and generate a smoothed elevation profile for further analysis.
+The `reconLandslideDEM` function reconstructs a landslide area using digital elevation model (DEM) data and applies Gaussian smoothing based on specified zones. It allows users to process raw bathymetric and scar data, reconstruct the landslide region, and generate a smoothed elevation profile for further analysis.
 
 ## Description
 
-The `reconstructLandslideArea` function is designed to process and analyze DEM data to reconstruct the landslide area. The function follows these steps:
+The `reconLandslideDEM` function is designed to process and analyze DEM data to reconstruct the landslide area. The function follows these steps:
 
 1. **Data Loading**: 
    Loads bathymetric (BATHY) data and scar shape data from user-specified files.
@@ -43,7 +43,7 @@ This function is useful for researchers and engineers working on landslide analy
 
 ```matlab
 % Example of how to call the function
-[X, Y, Z, reconstructedZSmooth] = reconstructLandslideArea(1, 20, 'scarfile.dat', 'smoothzone.dat', 'bathymetry.dat');
+[X, Y, Z, reconstructedZSmooth] = reconLandslideDEM(1, 20, 'scarfile.dat', 'smoothzone.dat', 'bathymetry.dat');
 ```
 ![Asset 6](https://github.com/user-attachments/assets/f541163e-b6a5-4853-b8a4-647a1a79ac92)
 
